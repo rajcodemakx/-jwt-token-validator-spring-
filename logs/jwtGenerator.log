@@ -1,0 +1,367 @@
+2024-11-27 23:08:53 INFO 8001 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : Starting JwtTokenValidatorApplication using Java 21.0.5 with PID 8001 (/home/ubuntu-admin/work/Springboot/jwt-token-validator/target/classes started by ubuntu-admin in /home/ubuntu-admin/work/Springboot/jwt-token-validator)
+2024-11-27 23:08:53 INFO 8001 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : No active profile set, falling back to 1 default profile: "default"
+2024-11-27 23:08:54 INFO 8001 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 23:08:54 INFO 8001 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-11-27 23:08:54 INFO 8001 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 18 ms. Found 0 JDBC repository interfaces.
+2024-11-27 23:08:54 INFO 8001 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 23:08:54 INFO 8001 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 23:08:54 INFO 8001 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-11-27 23:08:55 INFO 8001 --- [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port 8080 (http)
+2024-11-27 23:08:55 INFO 8001 --- [main] [org.apache.catalina.core.StandardService] : Starting service [Tomcat]
+2024-11-27 23:08:55 INFO 8001 --- [main] [org.apache.catalina.core.StandardEngine] : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27 23:08:55 INFO 8001 --- [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring embedded WebApplicationContext
+2024-11-27 23:08:55 INFO 8001 --- [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2009 ms
+2024-11-27 23:08:55 INFO 8001 --- [main] [org.hibernate.jpa.internal.util.LogHelper] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 23:08:55 INFO 8001 --- [main] [org.hibernate.Version] : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-27 23:08:55 INFO 8001 --- [main] [org.hibernate.cache.internal.RegionFactoryInitiator] : HHH000026: Second-level cache disabled
+2024-11-27 23:08:56 INFO 8001 --- [main] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 23:08:56 INFO 8001 --- [main] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Starting...
+2024-11-27 23:09:07 WARN 8001 --- [main] [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] : SQL Error: 0, SQLState: 08001
+2024-11-27 23:09:07 ERROR 8001 --- [main] [org.hibernate.engine.jdbc.spi.SqlExceptionHelper] : The connection attempt failed.
+2024-11-27 23:09:07 WARN 8001 --- [main] [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator] : HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.JDBCConnectionException: unable to obtain isolated JDBC connection [The connection attempt failed.] [n/a]
+	at org.hibernate.exception.internal.SQLStateConversionDelegate.convert(SQLStateConversionDelegate.java:100)
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:58)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:292)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:124)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:78)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.security.jwt_token_validator.JwtTokenValidatorApplication.main(JwtTokenValidatorApplication.java:10)
+Caused by: org.postgresql.util.PSQLException: The connection attempt failed.
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:364)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:273)
+	at org.postgresql.Driver.makeConnection(Driver.java:446)
+	at org.postgresql.Driver.connect(Driver.java:298)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:137)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:360)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:202)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:461)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:550)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:98)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:439)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 35 common frames omitted
+Caused by: java.net.SocketTimeoutException: Connect timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:546)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:592)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:751)
+	at org.postgresql.core.PGStream.createSocket(PGStream.java:260)
+	at org.postgresql.core.PGStream.<init>(PGStream.java:121)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:140)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:268)
+	... 49 common frames omitted
+2024-11-27 23:09:07 ERROR 8001 --- [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-11-27 23:09:07 WARN 8001 --- [main] [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext] : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2024-11-27 23:09:07 INFO 8001 --- [main] [org.apache.catalina.core.StandardService] : Stopping service [Tomcat]
+2024-11-27 23:09:07 INFO 8001 --- [main] [org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLogger] : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-27 23:09:07 ERROR 8001 --- [main] [org.springframework.boot.SpringApplication] : Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.security.jwt_token_validator.JwtTokenValidatorApplication.main(JwtTokenValidatorApplication.java:10)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	... 15 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:153)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:364)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:124)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:78)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 30 common frames omitted
+2024-11-27 23:09:49 INFO 8154 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : Starting JwtTokenValidatorApplication using Java 21.0.5 with PID 8154 (/home/ubuntu-admin/work/Springboot/jwt-token-validator/target/classes started by ubuntu-admin in /home/ubuntu-admin/work/Springboot/jwt-token-validator)
+2024-11-27 23:09:49 INFO 8154 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : No active profile set, falling back to 1 default profile: "default"
+2024-11-27 23:09:51 INFO 8154 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 23:09:51 INFO 8154 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-11-27 23:09:51 INFO 8154 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 11 ms. Found 0 JDBC repository interfaces.
+2024-11-27 23:09:51 INFO 8154 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 23:09:51 INFO 8154 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 23:09:51 INFO 8154 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 1 ms. Found 0 JPA repository interfaces.
+2024-11-27 23:09:52 INFO 8154 --- [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port 8080 (http)
+2024-11-27 23:09:52 INFO 8154 --- [main] [org.apache.catalina.core.StandardService] : Starting service [Tomcat]
+2024-11-27 23:09:52 INFO 8154 --- [main] [org.apache.catalina.core.StandardEngine] : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27 23:09:52 INFO 8154 --- [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring embedded WebApplicationContext
+2024-11-27 23:09:52 INFO 8154 --- [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 2956 ms
+2024-11-27 23:09:53 INFO 8154 --- [main] [org.hibernate.jpa.internal.util.LogHelper] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 23:09:53 INFO 8154 --- [main] [org.hibernate.Version] : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-27 23:09:53 INFO 8154 --- [main] [org.hibernate.cache.internal.RegionFactoryInitiator] : HHH000026: Second-level cache disabled
+2024-11-27 23:09:53 INFO 8154 --- [main] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 23:09:53 INFO 8154 --- [main] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Starting...
+2024-11-27 23:09:54 INFO 8154 --- [main] [com.zaxxer.hikari.pool.HikariPool] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@f9b8129
+2024-11-27 23:09:54 INFO 8154 --- [main] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Start completed.
+2024-11-27 23:09:54 INFO 8154 --- [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27 23:09:54 INFO 8154 --- [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 23:09:54 WARN 8154 --- [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 23:09:55 WARN 8154 --- [main] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] : 
+
+Using generated security password: 2c6c9353-8b73-4c23-a687-2b1df0707513
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-27 23:09:55 INFO 8154 --- [main] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-27 23:09:55 INFO 8154 --- [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port 8080 (http) with context path '/'
+2024-11-27 23:09:55 INFO 8154 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : Started JwtTokenValidatorApplication in 6.468 seconds (process running for 7.162)
+2024-11-27 23:12:48 INFO 8154 --- [SpringApplicationShutdownHook] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 23:12:48 INFO 8154 --- [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Shutdown initiated...
+2024-11-27 23:12:48 INFO 8154 --- [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Shutdown completed.
+2024-11-27 23:12:52 INFO 8516 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : Starting JwtTokenValidatorApplication using Java 21.0.5 with PID 8516 (/home/ubuntu-admin/work/Springboot/jwt-token-validator/target/classes started by ubuntu-admin in /home/ubuntu-admin/work/Springboot/jwt-token-validator)
+2024-11-27 23:12:52 INFO 8516 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : No active profile set, falling back to 1 default profile: "default"
+2024-11-27 23:12:53 INFO 8516 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 23:12:53 INFO 8516 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 23:12:53 INFO 8516 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 5 ms. Found 0 JPA repository interfaces.
+2024-11-27 23:12:53 INFO 8516 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 23:12:53 INFO 8516 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-11-27 23:12:53 INFO 8516 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 10 ms. Found 0 JDBC repository interfaces.
+2024-11-27 23:12:54 INFO 8516 --- [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port 8080 (http)
+2024-11-27 23:12:54 INFO 8516 --- [main] [org.apache.catalina.core.StandardService] : Starting service [Tomcat]
+2024-11-27 23:12:54 INFO 8516 --- [main] [org.apache.catalina.core.StandardEngine] : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27 23:12:54 INFO 8516 --- [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring embedded WebApplicationContext
+2024-11-27 23:12:54 INFO 8516 --- [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1844 ms
+2024-11-27 23:12:54 INFO 8516 --- [main] [org.hibernate.jpa.internal.util.LogHelper] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 23:12:54 INFO 8516 --- [main] [org.hibernate.Version] : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-27 23:12:54 INFO 8516 --- [main] [org.hibernate.cache.internal.RegionFactoryInitiator] : HHH000026: Second-level cache disabled
+2024-11-27 23:12:55 INFO 8516 --- [main] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 23:12:55 INFO 8516 --- [main] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Starting...
+2024-11-27 23:12:55 INFO 8516 --- [main] [com.zaxxer.hikari.pool.HikariPool] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@138a85d3
+2024-11-27 23:12:55 INFO 8516 --- [main] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Start completed.
+2024-11-27 23:12:56 INFO 8516 --- [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27 23:12:56 INFO 8516 --- [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 23:12:56 WARN 8516 --- [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 23:12:56 WARN 8516 --- [main] [org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration] : 
+
+Using generated security password: a8bfad30-3f64-4b5c-a96e-d03185a3ca84
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2024-11-27 23:12:56 INFO 8516 --- [main] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2024-11-27 23:12:57 INFO 8516 --- [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port 8080 (http) with context path '/'
+2024-11-27 23:12:57 INFO 8516 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : Started JwtTokenValidatorApplication in 5.48 seconds (process running for 6.073)
+2024-11-27 23:28:09 INFO 8516 --- [SpringApplicationShutdownHook] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 23:28:09 INFO 8516 --- [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Shutdown initiated...
+2024-11-27 23:28:09 INFO 8516 --- [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Shutdown completed.
+2024-11-27 23:28:15 INFO 12721 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : Starting JwtTokenValidatorApplication using Java 21.0.5 with PID 12721 (/home/ubuntu-admin/work/Springboot/jwt-token-validator/target/classes started by ubuntu-admin in /home/ubuntu-admin/work/Springboot/jwt-token-validator)
+2024-11-27 23:28:15 INFO 12721 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : No active profile set, falling back to 1 default profile: "default"
+2024-11-27 23:28:15 INFO 12721 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 23:28:15 INFO 12721 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 23:28:16 INFO 12721 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2024-11-27 23:28:16 INFO 12721 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 23:28:16 INFO 12721 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-11-27 23:28:16 INFO 12721 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.security.jwt_token_validator.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-11-27 23:28:16 INFO 12721 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 16 ms. Found 0 JDBC repository interfaces.
+2024-11-27 23:28:17 INFO 12721 --- [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port 8080 (http)
+2024-11-27 23:28:17 INFO 12721 --- [main] [org.apache.catalina.core.StandardService] : Starting service [Tomcat]
+2024-11-27 23:28:17 INFO 12721 --- [main] [org.apache.catalina.core.StandardEngine] : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27 23:28:17 INFO 12721 --- [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring embedded WebApplicationContext
+2024-11-27 23:28:17 INFO 12721 --- [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1808 ms
+2024-11-27 23:28:17 INFO 12721 --- [main] [org.hibernate.jpa.internal.util.LogHelper] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 23:28:17 INFO 12721 --- [main] [org.hibernate.Version] : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-27 23:28:17 INFO 12721 --- [main] [org.hibernate.cache.internal.RegionFactoryInitiator] : HHH000026: Second-level cache disabled
+2024-11-27 23:28:17 INFO 12721 --- [main] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 23:28:17 INFO 12721 --- [main] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Starting...
+2024-11-27 23:28:18 INFO 12721 --- [main] [com.zaxxer.hikari.pool.HikariPool] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@40fe8fd5
+2024-11-27 23:28:18 INFO 12721 --- [main] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Start completed.
+2024-11-27 23:28:19 INFO 12721 --- [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27 23:28:19 INFO 12721 --- [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 23:28:19 WARN 12721 --- [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 23:28:19 INFO 12721 --- [main] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2024-11-27 23:28:20 INFO 12721 --- [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port 8080 (http) with context path '/'
+2024-11-27 23:28:20 INFO 12721 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : Started JwtTokenValidatorApplication in 5.98 seconds (process running for 6.548)
+2024-11-27 23:28:26 INFO 12721 --- [SpringApplicationShutdownHook] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 23:28:26 INFO 12721 --- [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Shutdown initiated...
+2024-11-27 23:28:26 INFO 12721 --- [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Shutdown completed.
+2024-11-27 23:29:39 INFO 13167 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : Starting JwtTokenValidatorApplication using Java 21.0.5 with PID 13167 (/home/ubuntu-admin/work/Springboot/jwt-token-validator/target/classes started by ubuntu-admin in /home/ubuntu-admin/work/Springboot/jwt-token-validator)
+2024-11-27 23:29:39 INFO 13167 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : No active profile set, falling back to 1 default profile: "default"
+2024-11-27 23:29:39 INFO 13167 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 23:29:39 INFO 13167 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-27 23:29:39 INFO 13167 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 55 ms. Found 1 JPA repository interface.
+2024-11-27 23:29:40 INFO 13167 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Multiple Spring Data modules found, entering strict repository configuration mode
+2024-11-27 23:29:40 INFO 13167 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2024-11-27 23:29:40 INFO 13167 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport] : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.security.jwt_token_validator.repository.UserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2024-11-27 23:29:40 INFO 13167 --- [main] [org.springframework.data.repository.config.RepositoryConfigurationDelegate] : Finished Spring Data repository scanning in 15 ms. Found 0 JDBC repository interfaces.
+2024-11-27 23:29:40 INFO 13167 --- [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat initialized with port 8000 (http)
+2024-11-27 23:29:40 INFO 13167 --- [main] [org.apache.catalina.core.StandardService] : Starting service [Tomcat]
+2024-11-27 23:29:40 INFO 13167 --- [main] [org.apache.catalina.core.StandardEngine] : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-11-27 23:29:41 INFO 13167 --- [main] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring embedded WebApplicationContext
+2024-11-27 23:29:41 INFO 13167 --- [main] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext] : Root WebApplicationContext: initialization completed in 1890 ms
+2024-11-27 23:29:41 INFO 13167 --- [main] [org.hibernate.jpa.internal.util.LogHelper] : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-27 23:29:41 INFO 13167 --- [main] [org.hibernate.Version] : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-27 23:29:41 INFO 13167 --- [main] [org.hibernate.cache.internal.RegionFactoryInitiator] : HHH000026: Second-level cache disabled
+2024-11-27 23:29:41 INFO 13167 --- [main] [org.springframework.orm.jpa.persistenceunit.SpringPersistenceUnitInfo] : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-27 23:29:41 INFO 13167 --- [main] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Starting...
+2024-11-27 23:29:42 INFO 13167 --- [main] [com.zaxxer.hikari.pool.HikariPool] : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@37ffe4f3
+2024-11-27 23:29:42 INFO 13167 --- [main] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Start completed.
+2024-11-27 23:29:43 INFO 13167 --- [main] [org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator] : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-27 23:29:43 INFO 13167 --- [main] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 23:29:44 WARN 13167 --- [main] [org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration] : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-27 23:29:44 INFO 13167 --- [main] [org.springframework.security.config.annotation.authentication.configuration.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer] : Global AuthenticationManager configured with UserDetailsService bean with name myUserDetailsService
+2024-11-27 23:29:44 INFO 13167 --- [main] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer] : Tomcat started on port 8000 (http) with context path '/'
+2024-11-27 23:29:44 INFO 13167 --- [main] [com.security.jwt_token_validator.JwtTokenValidatorApplication] : Started JwtTokenValidatorApplication in 6.54 seconds (process running for 7.087)
+2024-11-27 23:30:47 INFO 13167 --- [http-nio-8000-exec-1] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]] : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-11-27 23:30:47 INFO 13167 --- [http-nio-8000-exec-1] [org.springframework.web.servlet.DispatcherServlet] : Initializing Servlet 'dispatcherServlet'
+2024-11-27 23:30:47 INFO 13167 --- [http-nio-8000-exec-1] [org.springframework.web.servlet.DispatcherServlet] : Completed initialization in 5 ms
+2024-11-27 23:30:59 ERROR 13167 --- [http-nio-8000-exec-3] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet]] : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+io.jsonwebtoken.MalformedJwtException: Malformed protected header JSON: Unable to deserialize: Unrecognized token 'Ș': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at io.jsonwebtoken.impl.io.JsonObjectDeserializer.malformed(JsonObjectDeserializer.java:76)
+	at io.jsonwebtoken.impl.io.JsonObjectDeserializer.apply(JsonObjectDeserializer.java:70)
+	at io.jsonwebtoken.impl.DefaultJwtParser.deserialize(DefaultJwtParser.java:890)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:380)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:362)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:94)
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:36)
+	at io.jsonwebtoken.impl.io.AbstractParser.parse(AbstractParser.java:29)
+	at io.jsonwebtoken.impl.DefaultJwtParser.parseSignedClaims(DefaultJwtParser.java:821)
+	at com.security.jwt_token_validator.util.JwtUtil.extractToken(JwtUtil.java:39)
+	at com.security.jwt_token_validator.util.JwtUtil.extractClaims(JwtUtil.java:33)
+	at com.security.jwt_token_validator.util.JwtUtil.extractUsername(JwtUtil.java:29)
+	at com.security.jwt_token_validator.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:38)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$3(HandlerMappingIntrospector.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:230)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: io.jsonwebtoken.io.DeserializationException: Unable to deserialize: Unrecognized token 'Ș': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at io.jsonwebtoken.io.AbstractDeserializer.deserialize(AbstractDeserializer.java:72)
+	at io.jsonwebtoken.impl.io.JsonObjectDeserializer.apply(JsonObjectDeserializer.java:52)
+	... 68 common frames omitted
+Caused by: com.fasterxml.jackson.core.JsonParseException: Unrecognized token 'Ș': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 2]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:2572)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2598)
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2606)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:765)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._reportInvalidToken(ReaderBasedJsonParser.java:3018)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser._handleOddValue(ReaderBasedJsonParser.java:2052)
+	at com.fasterxml.jackson.core.json.ReaderBasedJsonParser.nextToken(ReaderBasedJsonParser.java:780)
+	at com.fasterxml.jackson.databind.ObjectMapper._initForReading(ObjectMapper.java:4992)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4898)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3861)
+	at io.jsonwebtoken.jackson.io.JacksonDeserializer.doDeserialize(JacksonDeserializer.java:138)
+	at io.jsonwebtoken.io.AbstractDeserializer.deserialize(AbstractDeserializer.java:66)
+	... 69 common frames omitted
+2024-11-27 23:31:25 INFO 13167 --- [SpringApplicationShutdownHook] [org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean] : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-27 23:31:25 INFO 13167 --- [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Shutdown initiated...
+2024-11-27 23:31:25 INFO 13167 --- [SpringApplicationShutdownHook] [com.zaxxer.hikari.HikariDataSource] : HikariPool-1 - Shutdown completed.
